@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #444;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.job, .education-item, .certification-item {
+    margin-bottom: 20px;
+}
+
+.job h3, .education-item h3, .certification-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job p, .education-item p, .certification-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "•";
+    color: #2980b9;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Skills and Certifications */
+#skills ul, #certifications ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills ul li, #certifications ul li {
+    background: #2980b9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+#skills ul li:hover, #certifications ul li:hover {
+    background: #1c658c;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+    
+    .job h3, .education-item h3, .certification-item h3 {
+        font-size: 1.2em;
+    }
+}
